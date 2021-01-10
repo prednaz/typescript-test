@@ -1,11 +1,5 @@
 export type Index = "first" | "second" | "third";
 export type Three<T> = {[key in Index]: T};
-export const indexes: Three<Index> =
-  {
-    first: "first",
-    second: "second",
-    third: "third",
-  };
 
 export const map =
   <T1, T2>(f: (t1: T1) => T2, three: Three<T1>): Three<T2> =>
@@ -33,3 +27,9 @@ export const transpose =
       ),
     indexes
   );
+export const indexes: Three<Index> =
+{
+  first: "first",
+  second: "second",
+  third: "third",
+};
