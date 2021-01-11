@@ -8,7 +8,7 @@ export type State =
   {
     board: Board,
     turn: Piece,
-    message: string
+    message: string,
   };
 export type Coordinate = [three.Index, three.Index];
 export type Event = Coordinate;

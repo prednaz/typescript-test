@@ -13,9 +13,9 @@ export const any =
   <T>(f: (t: T) => boolean, three: Three<T>): boolean =>
   f(three.first) || f(three.second) || f(three.third);
 
-  export const all =
-  <T>(f: (t: T) => boolean, three: Three<T>): boolean =>
-  f(three.first) && f(three.second) && f(three.third);
+export const all =
+<T>(f: (t: T) => boolean, three: Three<T>): boolean =>
+f(three.first) && f(three.second) && f(three.third);
 
 export const transpose =
   <T>(board: Three<Three<T>>): Three<Three<T>> =>
